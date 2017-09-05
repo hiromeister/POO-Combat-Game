@@ -1,10 +1,14 @@
-function hero(health){
+function heroCard(name, health, armor, damage){
+    this.name = name;
     this.health = health;
-    this.hpBar = function(){
-        console.log("Le héro a " + health + " " + "points de vie." );
-        
-    };
-
+    this.armor = armor;
+    this.damage = damage;
 }
 
-let test = "lol";
+let gerald = new heroCard('Gerald', 200, 0, 15);
+console.log(gerald);
+console.log(gerald.health);
+
+// Ajout +50 pts
+gerald.health = gerald.health+50;
+console.log(gerald.health);
