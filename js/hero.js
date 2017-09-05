@@ -64,34 +64,128 @@ let randomArmor = [20, 0, 0] ;
 let randomHealth = [0, 50, 0, 0, 0];
 
 
-while(gerald.health != 0 ){
+// while(gerald.health != 0 ){
 
-console.log("TOUR 1");
+console.log("////////////////////////////TOUR 1////////////////////////////");
+
 
 let randomArmorTour1 = randomArmor[Math.floor(Math.random()*randomArmor.length)];
 let randomHealthTour1 = randomHealth[Math.floor(Math.random()*randomArmor.length)];
+console.log(randomArmorTour1);
+console.log(randomHealthTour1);
+gerald.armor = gerald.armor + randomArmorTour1;
+gerald.health = gerald.health + randomHealthTour1;
 
-console.log("TOUR 2");
+
+// Attaque sur ChefMinion1
+chefMinion.health = chefMinion.health - gerald.damage;
+console.log("Gerald attaque le Chef minion ! Les points de vie du boss descendent à " + chefMinion.health ); 
+
+
+//Attaque sur Gerald1
+if (gerald.armor > 1 ){
+    gerald.armor = gerald.armor - gerald.amor;
+    gerald.health = gerald.health - ;
+} else { 
+    gerald.health = gerald.health - chefMinion.damage;
+}
+
+
+
+
+console.log("////////////////////////////TOUR 2////////////////////////////");
 
 let randomArmorTour2 = randomArmor[Math.floor(Math.random()*randomArmor.length)];
 let randomHealthTour2 = randomHealth[Math.floor(Math.random()*randomArmor.length)];
 
+console.log(randomArmorTour2);
+console.log(randomHealthTour2);
+gerald.armor = gerald.armor + randomArmorTour2;
+gerald.health = gerald.health + randomHealthTour2;
 
-console.log("TOUR 3");
+
+// Attaque sur ChefMinion1
+chefMinion.health = chefMinion.health - gerald.damage;
+console.log("Gerald attaque le Chef minion ! Les points de vie du boss descendent à " + chefMinion.health ); 
+
+
+//Attaque sur Gerald1
+let tour2 = (gerald.health + gerald.armor) - chefMinion.damage;
+console.log("Le Chef minion attaque Gerald de 100. Il reste " + tour2 + "points de vie à Gerald");
+
+
+
+
+
+
+console.log("////////////////////////////TOUR 3 ////////////////////////////");
 
 let randomArmorTour3 = randomArmor[Math.floor(Math.random()*randomArmor.length)];
 let randomHealthTour3 = randomHealth[Math.floor(Math.random()*randomArmor.length)];
 
+console.log(randomArmorTour3);
+console.log(randomHealthTour3);
+gerald.armor = gerald.armor + randomArmorTour3;
+gerald.health = gerald.health + randomHealthTour3;
 
-console.log("TOUR 4");
+
+// Attaque sur ChefMinion1
+chefMinion.health = chefMinion.health - gerald.damage;
+console.log("Gerald attaque le Chef minion ! Les points de vie du boss descendent à " + chefMinion.health ); 
+
+
+//Attaque sur Gerald1
+let tour3 = (gerald.health + gerald.armor) - chefMinion.damage;
+console.log("Le Chef minion attaque Gerald de 100. Il reste " + tour3 + "points de vie à Gerald");
+
+
+
+console.log("////////////////////////////TOUR 4 ////////////////////////////");
 
 let randomArmorTour4 = randomArmor[Math.floor(Math.random()*randomArmor.length)];
 let randomHealthTour4 = randomHealth[Math.floor(Math.random()*randomArmor.length)];
 
+console.log(randomArmorTour4);
+console.log(randomHealthTour4);
+gerald.armor = gerald.armor + randomArmorTour4;
+gerald.health = gerald.health + randomHealthTour4;
 
-console.log("TOUR 5");
+
+// Attaque sur ChefMinion1
+chefMinion.health = chefMinion.health - gerald.damage;
+console.log("Gerald attaque le Chef minion ! Les points de vie du boss descendent à " + chefMinion.health ); 
+
+
+//Attaque sur Gerald1
+let tour4 = (gerald.health + gerald.armor) - chefMinion.damage;
+console.log("Le Chef minion attaque Gerald de 100. Il reste " + tour4 + "points de vie à Gerald");
+
+
+
+console.log("////////////////////////////TOUR 5 ////////////////////////////");
 
 let randomArmorTour5 = randomArmor[Math.floor(Math.random()*randomArmor.length)];
 let randomHealthTour5 = randomHealth[Math.floor(Math.random()*randomArmor.length)];
+
+console.log(randomArmorTour5);
+console.log(randomHealthTour5);
+gerald.armor = gerald.armor + randomArmorTour5;
+gerald.health = gerald.health + randomHealthTour5;
+
+
+// Attaque sur ChefMinion1
+chefMinion.health = chefMinion.health - gerald.damage;
+console.log("Gerald attaque le Chef minion ! Les points de vie du boss descendent à " + chefMinion.health ); 
+
+
+//Attaque sur Gerald1
+let tour5 = (gerald.health + gerald.armor) - chefMinion.damage;
+console.log("Le Chef minion attaque Gerald de 100. Il reste " + tour5 + "points de vie à Gerald");
+
+
+
+
+
+if (gerald.armor > 0 ){
 
 }
